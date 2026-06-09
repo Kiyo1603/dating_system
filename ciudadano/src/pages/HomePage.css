@@ -1,0 +1,271 @@
+@import '../shared/styles/variables.css';
+
+.ciudadano-app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-light) 0%, #FCF5E8 100%);
+}
+
+/* Hero section con imagen tradicional */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(139, 90, 43, 0.95), rgba(93, 58, 26, 0.95)), 
+              url('https://images.unsplash.com/photo-1585049781613-5cb9e1e922cd?w=1200');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-section::before {
+  content: '🏺';
+  position: absolute;
+  font-size: 8rem;
+  bottom: -20px;
+  right: -20px;
+  opacity: 0.1;
+  transform: rotate(-15deg);
+}
+
+.hero-section::after {
+  content: '🌽';
+  position: absolute;
+  font-size: 6rem;
+  top: -20px;
+  left: -20px;
+  opacity: 0.1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  color: var(--color-white);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: white;
+}
+
+.hero-section h1::before {
+  content: '🏺';
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  opacity: 0.9;
+}
+
+.hero-section h1::after {
+  content: '🌽';
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  opacity: 0.9;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-style: italic;
+  font-family: var(--font-decorative);
+}
+
+/* Tarjetas de información cultural */
+.info-cultural {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.tarjeta-cultural {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s;
+  border: 1px solid rgba(139, 90, 43, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta-cultural::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+}
+
+.tarjeta-cultural:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.icono-cultural {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-cultural h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.tarjeta-cultural p {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+}
+
+/* Citas próximas */
+.citas-proximas {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(139, 90, 43, 0.2);
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-gray-light);
+}
+
+.section-header h2 {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.section-header h2::after {
+  display: none;
+}
+
+.cita-card {
+  background: var(--color-gray-light);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--color-accent);
+  transition: all 0.3s;
+}
+
+.cita-card:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Pasos tradicionales */
+.pasos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.paso {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: var(--border-radius-lg);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(139, 90, 43, 0.2);
+}
+
+.paso-numero {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px solid var(--color-secondary);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.paso-numero::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px dashed var(--color-secondary);
+  border-radius: 50%;
+  top: -8px;
+  left: -8px;
+}
+
+.paso h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+}
+
+/* Información del municipio */
+.info-municipio {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.info-municipio h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.info-municipio p {
+  opacity: 0.9;
+  font-family: var(--font-decorative);
+  font-size: 1.1rem;
+}
+
+.direccion-municipio {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+@media (max-width: 768px) {
+  .info-cultural,
+  .pasos {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-section h1::before,
+  .hero-section h1::after {
+    font-size: 1.5rem;
+  }
+}

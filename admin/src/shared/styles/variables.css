@@ -1,0 +1,33 @@
+:root {
+  /* Colores institucionales - Inspirados en Palenque, Chiapas */
+  --color-primary: #2E5A2D; /* Verde maya tradicional */
+  --color-secondary: #D4A017; /* Oro maya */
+  --color-accent: #8B4513; /* Marrón tierra */
+  --color-light: #F5F1E6; /* Beige claro */
+  --color-dark: #1A2F1A; /* Verde oscuro */
+  
+  /* Colores de estado */
+  --color-success: #27ae60;
+  --color-warning: #f39c12;
+  --color-danger: #e74c3c;
+  --color-info: #3498db;
+  
+  /* Colores neutros */
+  --color-white: #FFFFFF;
+  --color-gray-light: #F8F9FA;
+  --color-gray: #6C757D;
+  --color-gray-dark: #343A40;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  /* Bordes */
+  --border-radius: 6px;
+  --border-radius-lg: 12px;
+  
+  /* Tipografía */
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Georgia', 'Times New Roman', serif;
+}
