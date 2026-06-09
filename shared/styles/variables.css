@@ -1,0 +1,37 @@
+:root {
+  /* Colores inspirados en Pueblo Nuevo Solistahuacán */
+  --color-primary: #8B5A2B;     /* Café/tierra - representa la tierra fértil */
+  --color-primary-dark: #5D3A1A; /* Café oscuro - profundidad de la tierra */
+  --color-secondary: #D4A373;   /* Beige/ocre - representa el maíz */
+  --color-accent: #BC6C25;      /* Naranja terracota - representando el barro y artesanías */
+  --color-terracota: #C17A4F;   /* Terracota - cerámica tradicional */
+  --color-indigo: #2F4858;      /* Azul índigo - tradición textil zoque */
+  
+  /* Colores naturales */
+  --color-light: #FEF7E8;       /* Crema - papel amate tradicional */
+  --color-dark: #2C1A0E;        /* Café profundo */
+  --color-white: #FFFFFF;
+  --color-gray-light: #F5EADB;
+  --color-gray: #8B6B4D;
+  --color-gray-dark: #4A3727;
+  
+  /* Colores de estado */
+  --color-success: #6B8E23;
+  --color-warning: #E6A017;
+  --color-danger: #B23C1C;
+  --color-info: #3A6EA5;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  /* Bordes */
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+  
+  /* Tipografía */
+  --font-primary: 'Quicksand', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Playfair Display', 'Georgia', serif;
+  --font-decorative: 'Caveat', cursive;
+}

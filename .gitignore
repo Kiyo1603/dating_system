@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+build/
+dist/
+*.js.map
+
+# Environment
+.env
+.env.local
+.env.production
+.env.development
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Database
+*.db
+*.sqlite
+
+# Backend specific
+backend/node_modules/
+backend/.env
+backend/logs/
+
+# Frontend specific
+ciudadano/node_modules/
+ciudadano/build/
+admin/node_modules/
+admin/build/

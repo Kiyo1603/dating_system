@@ -1,0 +1,22 @@
+{
+  "name": "sistema-citas-palenque",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "ciudadano",
+    "admin",
+    "backend"
+  ],
+  "scripts": {
+    "start:ciudadano": "cd ciudadano && npm start",
+    "start:admin": "cd admin && npm start",
+    "start:backend": "cd backend && npm run dev",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:ciudadano\" \"npm run start:admin\"",
+    "build:ciudadano": "cd ciudadano && npm run build",
+    "build:admin": "cd admin && npm run build",
+    "install:all": "npm install && cd ciudadano && npm install && cd ../admin && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
